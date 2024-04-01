@@ -1,0 +1,235 @@
+@import 'reset';
+@import 'colors';
+
+
+.header{
+    width: 100%;
+    &-wrapper{
+        padding-left: 55px;
+        padding-top: 17px;
+        padding-right: 55px;
+    }
+    &-nav{
+        &-burger{
+            display: none;
+            flex-direction: column;
+            &__line{
+                background: #333333;
+                width: 32px;
+                height: 2px;
+                margin-bottom: 10px;
+            }
+        }
+
+        &-blue{
+            color: $blue;
+            font-family: Montserrat;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+
+            &__red{
+                color: $red;
+                font-family: Montserrat;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+        }
+
+        &-ul{
+            flex-direction: row;
+            column-gap: 40px;
+            margin-left: 40px;
+            align-items: center;
+
+            &-media{
+                flex-direction: row;
+                column-gap: 40px;
+                margin-left: 40px;
+                align-items: center;
+            }
+            
+            &-li{
+                color: $black;
+                font-family: Montserrat;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+        }
+
+        &-info{
+            margin-left: 680px;
+            align-items: center;
+
+            &__currency{
+                color: $red;
+                font-family: Montserrat;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                border-bottom: 3px dotted $red;
+            }
+
+            &__lang{
+                margin-left: 30px;
+                color: $red;
+                font-family: Montserrat;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                border-bottom: 3px dashed $red;
+            }
+
+            &__icon{
+                margin-left: 30px;
+                width: 32px;
+                height: 32px;
+
+            }
+        }
+    }
+}
+
+.main{
+    width: 100%;
+    &-wrapper{
+        padding-left: 55px;
+    }
+    &-section-home{
+        &-text{
+            border-radius: 20px;
+            width: 1360px;
+            height: 500px;
+            flex-direction: column;
+            background: url(/image/backgrond.png) no-repeat center/cover;
+            padding-left: 70px;
+            padding-top: 70px;
+            margin-top: 16px;
+
+            &__title{
+                color: $black;
+                font-family: Montserrat;
+                font-size: 48px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+
+            &__descr{
+                color: $black;
+                font-family: Montserrat;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 30px;
+                margin-top: 20px;
+            }
+        }
+
+        &-cordinat{
+            width: 570px;
+            height: 70px;
+            flex-shrink: 0;
+            border-radius: 36px;
+            border: 1px solid #D6D6D6;
+            background: var(--color_white, $white);
+            box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.16);
+            margin: 0 auto;
+            align-items: center;
+            z-index: 2;
+            position: absolute;
+            left: 30%;
+            top:76%;
+
+            &-where{
+                position: relative;
+                margin-left: 59px;
+
+                &::before{
+                    content: '';
+                    position: absolute;
+                    background: url(/image/tochka.svg) no-repeat center/cover;
+                    width: 22px;
+                    height: 22px;
+                    top: 23%;
+                    left: -30%;
+                }
+
+                &__title{
+                    color: $black;
+                    font-family: Montserrat;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
+
+                &__descr{
+                    color: #A3A3A3;
+                    font-family: Montserrat;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
+            }
+
+            &-line{
+            width: 2px;
+            height: 40px;
+            background: #EBEBEB;
+            margin-left: 73px;
+            }
+
+            &-when{
+                position: relative;
+                margin-left: 72px;
+
+                &::before{
+                    content: '';
+                    position: absolute;
+                    background: url(/image/calendar.svg) no-repeat center/cover;
+                    width: 22px;
+                    height: 22px;
+                    top: 25%;
+                    left: -52%;
+                }
+
+                &__title{
+                    color: $black;
+                    font-family: Montserrat;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
+
+                &__descr{
+                    color: #A3A3A3;
+                    font-family: Montserrat;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
+            }
+
+            &-search{
+                width: 40px;
+                height: 40px;
+                flex-shrink: 0;
+                align-items: center;
+                background: $red;
+                border-radius: 50%;
+                margin-left: 105px;
+            }
+        }
+    }
+}

@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat";
+}
+
+button {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #262729;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+input {
+  border: none;
+}
+
+input::-moz-placeholder {
+  color: #262729;
+}
+
+input::placeholder {
+  color: #262729;
+}
+
+input:focus {
+  border: 1px solid #262729;
+}
+
+b, strong {
+  font-weight: 400;
+}
+
+li {
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 1496px;
+  margin: 0 auto;
+}
