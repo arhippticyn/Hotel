@@ -232,4 +232,93 @@
             }
         }
     }
+
+    &-section-peculiarities{
+        margin-top: 130px;
+        flex-direction: column;
+        height: 569px;
+
+        &-wrapper{
+            background: #F7F7F7;
+            padding-left: 55px;
+        }
+
+        &__title{
+            color: $black;
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            margin-right: 200px;
+        }
+
+        &__descr{
+            color: #333;
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 28px; 
+            margin-top: 26px;
+            margin-right: 180px;
+        }
+
+        &-ul{
+            margin-top: 60px;
+            column-gap: 100px;
+
+            &-li{
+                display: flex;
+                width: 270px;
+                flex-direction: column;
+                align-items: center;
+
+                &-image{
+                    position: relative;
+                    place-items: center;
+                    display: grid;
+
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        background: $blue;
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 40%;
+                        opacity: 0.16;
+                    }
+
+                    &__img{
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+
+                &__title{
+                    color: $black;
+                    text-align: center;
+                    font-family: Montserrat;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 20px;
+                    margin-top: 35px;
+                }
+
+                &__descr{
+                    color: $black;
+                    text-align: center;
+                    font-family: Montserrat;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 22px;
+                    margin-top: 13px;
+                }
+            }
+        }
+    }
 }

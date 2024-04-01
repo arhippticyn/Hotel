@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Montserrat";
+}
+
 button {
   border: 0;
   background: transparent;
@@ -51,4 +55,9 @@ li {
 .flex-center {
   align-items: center;
   justify-content: center;
+}
+
+.container {
+  width: 1496px;
+  margin: 0 auto;
 }
