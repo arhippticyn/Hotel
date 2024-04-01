@@ -1,0 +1,10 @@
+@import '/styles/colors.scss';
+
+.flex {
+    display: flex;
+  }
+  
+  .flex-center{
+    align-items: center;
+    justify-content:center;
+  }
