@@ -296,6 +296,7 @@ li {
 .main-section-peculiarities {
   padding-top: 70px;
   margin-top: 130px;
+  display: flex;
   flex-direction: column;
   height: 569px;
 }
@@ -329,6 +330,7 @@ li {
   margin-top: 60px;
   -moz-column-gap: 100px;
        column-gap: 100px;
+  display: flex;
 }
 .main-section-peculiarities-ul-li {
   display: flex;
@@ -581,11 +583,43 @@ li {
     flex-direction: column;
     row-gap: 32px;
   }
+  .header .show.header-nav-burger__line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .header .show.header-nav-burger__line:nth-child(2) {
+    opacity: 0;
+  }
+  .header .show.header-nav-burger__line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
   .ul-hidden {
     display: block;
   }
+  .show {
+    display: block;
+    padding-left: unset;
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+  }
+  .show.header-nav-burger__line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .show.header-nav-burger__line:nth-child(2) {
+    opacity: 0;
+  }
+  .show.header-nav-burger__line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .show.header-nav-info__currency, .show.header-nav-info__lang {
+    display: block;
+  }
+  .show.social {
+    opacity: 1;
+    margin-top: 260px;
+  }
   .main-wrapper {
-    padding-left: 16px;
+    padding-left: 0px;
   }
   .main-section-home-text {
     background: url(/image/mobile-bg.png) center/cover;
@@ -619,8 +653,8 @@ li {
   .main-section-home-cordinat {
     width: 318px;
     height: 70px;
-    margin-top: 110px;
-    margin-left: -77px;
+    margin-top: -94px;
+    margin-left: -80px;
   }
   .main-section-home-cordinat-line {
     display: none;
@@ -631,49 +665,107 @@ li {
   .main-section-home-cordinat-search {
     width: 40px;
     height: 40px;
-    margin-left: 86px;
+    margin-left: 50px;
   }
-  .main--section-peculiarities {
+  .main-section-peculiarities {
     margin-top: 0px;
     display: flex;
     flex-direction: column;
-  }
-  .main--section-peculiarities-wrapper {
     width: 360px;
     height: 1260px;
+  }
+  .main-section-peculiarities-wrapper {
+    width: 414px;
+    height: 1360px;
     flex-shrink: 0;
   }
-  .main--section-peculiarities__title {
-    width: 328px;
-    color: #262729;
-    text-align: center;
-    font-family: Montserrat;
+  .main-section-peculiarities__title {
     font-size: 28px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-  }
-  .main--section-peculiarities-descr {
-    width: 328px;
-    color: #262729;
+    margin-left: -10px;
     text-align: center;
-    font-family: Montserrat;
+    margin: 0 auto;
+  }
+  .main-section-peculiarities__descr {
     font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 28px;
-  }
-  .main--section-peculiarities-ul {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    line-height: 140%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
     width: 328px;
-    height: 894px;
   }
-  .main--section-peculiarities-ul-li {
+  .main-section-peculiarities-ul {
+    display: flex;
+    gap: 70px;
+    margin-left: 20px;
+    flex-wrap: wrap;
+  }
+  .main-section-peculiarities-ul-li {
     display: flex;
     width: 328px;
     flex-direction: column;
     align-items: center;
+  }
+  .main-section-specialoffer {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    height: 1454px;
+  }
+  .main-section-specialoffer__title {
+    margin: 0 auto;
+    font-size: 28px;
+    margin-top: 64px;
+  }
+  .main-section-specialoffer-ul {
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 16px;
+    row-gap: 16px;
+  }
+  .main-section-specialoffer-ul-li {
+    width: 328px;
+    height: 388px;
+  }
+  .main-section-specialoffer-ul-li-image {
+    width: 304px;
+    height: 192px;
+  }
+  .main-section-specialoffer-ul-li-image__img {
+    width: 304px;
+    height: 192px;
+  }
+  .main-section-specialoffer-ul-li__title {
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 24px;
+  }
+  .main-section-specialoffer-ul-li__bedroom {
+    display: none;
+  }
+  .main-section-specialoffer-ul-li__data {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .main-section-specialoffer-ul-li-price {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 16px;
+  }
+  .main-section-specialoffer-ul-li-price__night {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+  }
+  .main-section-specialoffer-ul-li-info {
+    display: none;
+    width: 0px;
+    height: 0px;
   }
 }

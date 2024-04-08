@@ -262,6 +262,7 @@
     &-section-peculiarities{
         padding-top: 70px;
         margin-top: 130px;
+        display: flex;
         flex-direction: column;
         height: 569px;
 
@@ -297,6 +298,7 @@
         &-ul{
             margin-top: 60px;
             column-gap: 100px;
+            display: flex;
 
             &-li{
                 display: flex;
@@ -589,15 +591,15 @@
             row-gap: 32px;
 
             &.header-nav-burger__line:nth-child(1){
-
+                transform: translateY(8px) rotate(45deg);
             }
 
             &.header-nav-burger__line:nth-child(2){
-
+                opacity: 0;
             }
 
             &.header-nav-burger__line:nth-child(3){
-
+                transform: translateY(-8px) rotate(-45deg);
             }
         }
     }
@@ -606,40 +608,40 @@
         display: block;
     }
 
-    // .show{
-    //     display: block;
-    //     padding-left: unset;
-    //     display: flex;
-    //     flex-direction: column;
-    //     row-gap: 32px;
+    .show{
+        display: block;
+        padding-left: unset;
+        display: flex;
+        flex-direction: column;
+        row-gap: 32px;
 
-    //     &.header-nav-burger__line:nth-child(1){
-    //         transform: translateY(8px) rotate(45deg);
-    //     }
+        &.header-nav-burger__line:nth-child(1){
+            transform: translateY(8px) rotate(45deg);
+        }
 
-    //     &.header-nav-burger__line:nth-child(2){
-    //         opacity: 0;
-    //     }
+        &.header-nav-burger__line:nth-child(2){
+            opacity: 0;
+        }
 
-    //     &.header-nav-burger__line:nth-child(3){
-    //         transform: translateY(-8px) rotate(-45deg);
-    //     }
+        &.header-nav-burger__line:nth-child(3){
+            transform: translateY(-8px) rotate(-45deg);
+        }
 
-    //     &.header-nav-info__currency, &.header-nav-info__lang{
-    //         display: block;
-    //     }
+        &.header-nav-info__currency, &.header-nav-info__lang{
+            display: block;
+        }
 
-    //     &.social{
-    //         opacity: 1;
-    //         margin-top: 260px;
-    //     }
+        &.social{
+            opacity: 1;
+            margin-top: 260px;
+        }
 
-
-    // }
+        
+    }
 
     .main{
         &-wrapper{
-            padding-left: 16px;
+            padding-left: 0px;
         }
 
         &-section-home{
@@ -678,9 +680,8 @@
             &-cordinat{
                 width: 318px;
                 height: 70px;
-                margin-top: 110px;
-                margin-left: -77px;
-
+                margin-top: -94px;
+                margin-left: -80px;
                 &-line{
                     display: none;
                 }
@@ -692,55 +693,126 @@
                 &-search{
                     width: 40px;
                     height: 40px;
-                    margin-left: 86px;
+                    margin-left: 50px;
                 }
             }
         }
 
-        &--section-peculiarities{
+        &-section-peculiarities{
             margin-top: 0px;
             display: flex;
             flex-direction: column;
+            width: 360px;
+            height: 1260px;
             &-wrapper{
-                width: 360px;
-                height: 1260px;
+                width: 414px;
+                height: 1360px;
                 flex-shrink: 0;
             }
 
             &__title{
-                width: 328px;
-                color: $black;
-                text-align: center;
-                font-family: Montserrat;
                 font-size: 28px;
-                font-style: normal;
-                font-weight: 600;
-                line-height: normal;
+                margin-left: -10px;
+                text-align: center;
+                margin: 0 auto;
             }
 
-            &-descr{
-                width: 328px;
-                color: $black;
-                text-align: center;
-                font-family: Montserrat;
+            &__descr{
                 font-size: 20px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 28px;
+                line-height: 140%;
+                text-align: center;
+                margin: 0 auto;
+                margin-top: 10px;
+                width: 328px;
             }
 
             &-ul{
                 display: flex;
-                justify-content: center;
-                flex-direction: column; 
-                width: 328px;
-                height: 894px;
+                gap: 70px;
+                margin-left: 20px;
+                flex-wrap:wrap;
 
                 &-li{
                     display: flex;
                     width: 328px;
                     flex-direction: column;
                     align-items: center;
+                }
+            }
+        }
+
+        &-section-specialoffer{
+            padding-top: 80px;
+            display: flex;
+            flex-direction: column;
+            width: 360px;
+            height: 1454px;
+
+            &__title{
+                margin: 0 auto;
+                font-size: 28px;
+                margin-top: 64px;
+            }
+
+            &-ul{
+                flex-direction: column;
+                justify-content: center;
+                padding-left: 16px;
+                row-gap: 16px;
+
+                &-li{
+                    width: 328px;
+                    height: 388px;
+                    
+
+                    &-image{
+                        width: 304px;
+                        height: 192px;
+
+                        &__img{
+                            width: 304px;
+                            height: 192px;
+                        }
+                    }
+
+                    &__title{
+                        font-family: Montserrat;
+                        font-size: 22px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        margin-top: 24px;
+                    }
+
+                    &__bedroom{
+                        display: none;
+                    }
+
+                    &__data{
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 24px;
+                    }
+
+                    &-price{
+                        font-size: 30px;
+                        font-style: normal;
+                        font-weight: 500;
+                        margin-top: 16px;
+
+                        &__night{
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 400;
+                        }
+                    }
+
+                    &-info{
+                        display: none;
+                        width: 0px;
+                        height: 0px;
+                    }
                 }
             }
         }
