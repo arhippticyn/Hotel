@@ -124,7 +124,7 @@
 .main{
     width: 100%;
     &-wrapper{
-        padding-left: 55px;
+        padding-left: 35px;
     }
     &-section-home{
         &-text{
@@ -165,14 +165,15 @@
             flex-shrink: 0;
             border-radius: 36px;
             border: 1px solid #D6D6D6;
-            background:  $white;
+            background: #FFF;
             box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.16);
-            margin: 0 auto;
             align-items: center;
             z-index: 2;
-            position: absolute;
+            position: relative;
             left: 30%;
-            top:76%;
+            top: 75%;
+            margin: 0;
+            margin-top: -36px;
 
             &-where{
                 position: relative;
@@ -540,6 +541,206 @@
             }
         }
     }
+
+    &-section-conteiner{
+        margin-top: 120px;
+
+        &__Reviews{
+            color: $black;
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+
+        &__flex{
+            display: flex;
+
+            &__div{
+                display: flex;
+                align-items: center;
+                text-align: center;
+                 margin-left: 160px;
+                 gap: 40px;
+                 margin-top: 60px;
+
+                 &__box{
+                    width: 327px;
+                    height: 301px;
+                 }
+
+                 &__img{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0 auto;
+                 }
+
+                 &__p{
+                    display: flex;
+                    align-self: stretch;
+                    color: $black;
+                    font-family: Montserrat;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 22px;
+                    margin-top: 20px;
+                 }
+
+                 &__h3{
+                    color: #1A1A1A;
+                    font-family: Montserrat;
+                    font-size: 14px;
+                    font-style: italic;
+                    font-weight: 600;
+                    line-height: normal;
+                 }
+
+                 &__span{
+                    color: #1A1A1A;
+                    font-family: Montserrat;
+                    font-size: 14px;
+                    font-style: italic;
+                    font-weight: 400;
+                    line-height: normal;
+                 }
+            }
+
+            &__arrow-180deg{
+                margin-right: 1px;
+            }
+
+            &__arrow{
+                margin-left: 95px;
+             }
+        }
+
+        &__More{
+            margin-left: 600px;
+            margin-top: 30px;
+            border-radius: 10px;
+            width: 275px;
+            height: 50px;
+            background: rgb(228, 74, 74);
+            font-family: Montserrat;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 125%;
+            text-align: center;
+            color: $white;
+         }
+    }
+
+    &-section-recentposts{
+        margin-top: 100px;
+        padding-left: 45px;
+
+        &__title{
+            color: $black;
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            margin-left: -83px;
+        }
+
+        &-ul{
+            display: flex;
+            column-gap: 30px;
+            justify-content: center;
+            margin-top: 60px;
+
+            &-li{
+                width: 370px;
+                height: 410px;
+                display: flex;
+                flex-direction: column;
+
+                &__img{
+                    width: 370px;
+                    height: 250px;
+                    border-radius: 15px;
+                }
+
+                &__data{
+                    color: $black;
+                    font-family: Montserrat;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 20px;
+                    margin-top: 25px;
+                }
+
+                &__time{
+                    color: $blue;
+                    text-align: right;
+                    font-family: Montserrat;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 20px;
+                    position: relative;
+                    margin-left: 204px;
+
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        background: url(/image/time.svg) no-repeat center/cover;
+                        width: 20px;
+                        height: 20px;
+                        left: -31%;
+                    }
+                }
+
+                &__times{
+                    color: $blue;
+                    text-align: right;
+                    font-family: Montserrat;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 20px;
+                    position: relative;
+                    margin-left: 204px;
+
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        background: url(/image/time.svg) no-repeat center/cover;
+                        width: 20px;
+                        height: 20px;
+                        left: -36%;
+                    }
+                }
+
+                &__title{
+                    color: $black;
+                    font-family: Montserrat;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    margin-top: 10px;
+                }
+
+                &__descr{
+                    color: $black;
+                    font-family: Montserrat;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 22px;
+                    margin-top: 15px;
+                }
+            }
+    }
+}
 }
 
 
@@ -812,6 +1013,141 @@
                         display: none;
                         width: 0px;
                         height: 0px;
+                    }
+                }
+            }
+        }
+
+        &-section-conteiner{
+            width: 360px;
+            padding-left: 16px;
+
+            &__Reviews{
+                color: $black;
+                text-align: center;
+                font-family: Montserrat;
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+
+            &__flex{
+                display: flex;
+                justify-content: center;
+                &__arrow-180deg{
+                    display: none;
+                }
+
+                &__div{
+                    
+                    &__box:nth-child(1){
+                        display: flex;
+                        width: 312px;
+                        height: 301px;
+                        flex-direction: column;
+                        align-items: center;
+                        flex-shrink: 0;
+                        margin-top: 64px;
+                        margin-left: -180px;
+
+                    }
+
+                    &__box:nth-child(2), &__box:nth-child(3){
+                        display: none;
+                    }
+                }
+
+                &__arrow{
+                    display: none;
+                }
+            }
+
+            &__More{
+                width: 319px;
+                height: 50px;
+                padding: 15px 97px;
+                flex-shrink: 0;
+                border-radius: 10px;
+                background: #EE685F;
+                color: #FFF;
+                font-family: Montserrat;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 20px;
+                margin-left: 9px;
+                margin-top: 48px;
+            }
+        }
+
+        &-section-recentposts{
+            display: flex;
+            flex-direction: column;
+            padding-left: 16px;
+            width: 360px;
+
+            &__title{
+                text-align: center;
+                font-family: Montserrat;
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                margin-left: 2px;
+            }
+
+            .bw{
+                margin-top: 57px;
+            }
+
+            &-ul{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                row-gap: 17px;
+                margin-top: 64px;
+
+                &-li{
+                    width: 328px;
+                    height: 406px;
+
+                    &__img{
+                        width: 328px;
+                        height: 224px;
+                    }
+
+                    &__data{
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 20px;
+                        margin-top: 24px;
+                    }
+
+                    &__time{
+                        margin-top: 24px;
+                        margin-left: 162px;
+                    }
+
+                    &__times{
+                        margin-left: 176px;
+                    }
+
+                    &__title{
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                        margin-top: 10px;
+                    }
+
+                    &__descr{
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 22px; 
+                        margin-top: 16px;
                     }
                 }
             }
