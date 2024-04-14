@@ -67,13 +67,9 @@ li {
   overflow-x: hidden;
 }
 
-.header {
-  width: 100%;
-}
 .header-wrapper {
-  padding-left: 55px;
+  padding-left: 45px;
   padding-top: 17px;
-  padding-right: 55px;
 }
 .header-nav-burger {
   display: none;
@@ -130,7 +126,7 @@ li {
   display: none;
 }
 .header-nav-info {
-  margin-left: 667px;
+  margin-left: 653px;
   align-items: center;
 }
 .header-nav-info__currency {
@@ -174,7 +170,7 @@ li {
   width: 100%;
 }
 .main-wrapper {
-  padding-left: 35px;
+  padding-left: 45px;
 }
 .main-section-home-text {
   width: 1449px;
@@ -303,8 +299,8 @@ li {
 }
 .main-section-peculiarities-wrapper {
   background: #F7F7F7;
-  margin-left: -54px;
-  padding-left: 55px;
+  margin-left: -44px;
+  padding-left: 45px;
 }
 .main-section-peculiarities__title {
   color: #262729;
@@ -329,8 +325,8 @@ li {
 }
 .main-section-peculiarities-ul {
   margin-top: 60px;
-  -moz-column-gap: 100px;
-       column-gap: 100px;
+  -moz-column-gap: 80px;
+       column-gap: 80px;
   display: flex;
 }
 .main-section-peculiarities-ul-li {
@@ -391,10 +387,9 @@ li {
   margin-left: -80px;
 }
 .main-section-specialoffer-ul {
-  -moz-column-gap: 30px;
-       column-gap: 30px;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
   margin-top: 60px;
-  justify-content: center;
   margin-left: -1px;
 }
 .main-section-specialoffer-ul-li {
@@ -404,6 +399,9 @@ li {
   border: 1px solid #E7E6EB;
   padding-top: 10px;
   padding-left: 10px;
+}
+.main-section-specialoffer-ul-li:nth-child(2), .main-section-specialoffer-ul-li:nth-child(3) {
+  margin-left: 100px;
 }
 .main-section-specialoffer-ul-li-image {
   width: 350px;
@@ -569,7 +567,7 @@ li {
   display: flex;
   align-items: center;
   text-align: center;
-  margin-left: 160px;
+  margin-left: 110px;
   gap: 40px;
   margin-top: 60px;
 }
@@ -648,7 +646,6 @@ li {
   display: flex;
   -moz-column-gap: 30px;
        column-gap: 30px;
-  justify-content: center;
   margin-top: 60px;
 }
 .main-section-recentposts-ul-li {
@@ -729,12 +726,11 @@ li {
 }
 
 .footer {
-  width: 1730px;
   height: 350px;
 }
 .footer-wrapper {
   background: #f3f2f0;
-  padding-left: 35px;
+  padding-left: 55px;
   margin-top: 100px;
 }
 .footer-flex {
