@@ -3,11 +3,259 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/LastMinuteDeals.css">
     <title>Last Minute Deals</title>
+    <style>
+        html{
+             overflow-x: hidden; 
+        }
+    </style>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="page-wrapper">
+        <div class="header-wrapper">
+            <div class="container">
+                <header class="header">
+                    <nav class="header-nav flex">
+                        <div class="header-nav-burger" id="burger">
+                            <div class="header-nav-burger__line"></div>
+                            <div class="header-nav-burger__line"></div>
+                            <div class="header-nav-burger__line"></div>
+                        </div>
+                        <span class="header-nav-blue">Your<span class="header-nav-blue__red">.logo</span></span>
+                        <ul class="header-nav-ul flex" id="nav-menu">
+                            <li class="header-nav-ul-li"><a class="header-nav-li__a" href="/LastMinuteDeals.html">Last Minute Deals</a></li>
+                            <li class="header-nav-ul-li"><a class="header-nav-li__a" href="#">Blog</a></li>
+                            <li class="header-nav-ul-li"><a class="header-nav-li__a" href="#">About us</a></li>
+                            <li class="header-nav-ul-li"><a class="header-nav-li__a" href="#">Contacts</a></li>
+                        </ul>
+                        <div class="header-nav-info flex">
+                            <span class="header-nav-info__currency">$</span>
+                            <span class="header-nav-info__lang">EN</span>
+                            <img class="header-nav-info__icon" src="/image/icon.svg" alt="">
+                        </div>
+                    </nav>
+                </header>
+            </div>
+        </div>
+
+        <div class="main-wrapper">
+            <div class="container">
+                <main class="main">
+                    <h1 class="main__title">Last Minute Deals</h1>
+
+                    <section class="main-section-cordinat">
+                            <div class="main-section-cordinat-where">
+                                <p class="main-section-cordinat-where__title">Where</p>
+                                <p class="main-section-cordinat-where__descr">Search Destination</p>
+                            </div>
+
+                            <div class="main-section-cordinat-line flex"></div>
+
+                            <div class="main-section-cordinat-when">
+                                <p class="main-section-cordinat-when__title">When</p>
+                                <p class="main-section--cordinat-when__descr">Select Date</p>
+                            </div>
+
+                            <div class="main-section-cordinat-search flex flex-center">
+                                <img src="/image/search.svg" alt="" class="main-section-home-cordinat-search__img">
+                            </div>
+                    </section>
+
+                    <section class="main-section-changeroom">
+                        <div class="main-section-changeroom-wishes">
+                            <button type="button" class="main-section-changeroom-wishes__btn">Show on map</button>
+
+                            <div class="main-section-changeroom-wishes-fas">
+                                <span class="main-section-changeroom-wishes-fas__filter">Filter</span>
+
+                                <div class="main-section-changeroom-wishes-fas-sort">
+                                    <span class="main-section-changeroom-wishes-fas-sort__title">Sort by</span>
+
+                                    <div class="main-section-changeroom-wishes-fas-sort-dropdown">
+                                        <button class="main-section-changeroom-wishes-fas-sort-dropdown-dropbtn"><span class="main-section-changeroom-wishes-fas-sort-dropdown-dropbtn__span">Relevance</span></button>
+                                        <div class="main-section-changeroom-wishes-fas-sort-dropdown-dropdown-content">
+                                          <a href="#">Newest</a>
+                                          <a href="#">Rating</a>
+                                          <a href="#">Discount</a>
+                                          <a href="#">Low to High</a>
+                                          <a href="#">High to Low</a>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-section-changeroom-containers">
+                            
+                            <div class="main-section-changeroom-containers-container">
+
+                                <div class="main-section-changeroom-containers-container-box">
+                                    <div class="main-section-changeroom-containers-container-box-image">
+                                        <span class="main-section-changeroom-containers-container-box-image-rating"><img class="main-section-specialoffer-ul-li-image-rating__star" src="/image/Star 1.svg" alt="">4.8</span>
+                                        <img class="main-section-changeroom-containers-container-box-image__img" src="/image/bed3.png" alt="">
+                                    </div>
     
+                                    <h3 class="main-section-changeroom-containers-container-box__title">Wilderness Club at Big Ceddar</h3>
+    
+                                    <p class="main-section-changeroom-containers-container-box__bedroom">2 Bedroom Combined Lodge</p>
+    
+                                    <p class="main-section-changeroom-containers-container-box__data">28 October — 1 November</p>
+    
+                                    <span class="main-section-changeroom-containers-container-box-price">$2016<span class="main-section-changeroom-containers-container-box-price__night">/6 night</span></span>
+    
+                                    <ul class="main-section-changeroom-containers-container-box-info flex">
+                                        <li class="main-section-changeroom-containers-container-box-info__beds">4 Beds</li>
+                                        <li class="main-section-changeroom-containers-container-box-info__people">8 Sleeps</li>
+                                        <li class="main-section-changeroom-containers-container-box-info__area">1,350 Sq Ft</li>
+                                    </ul>
+                                </div>
+    
+                                <div class="main-section-changeroom-containers-container-box">
+                                    <div class="main-section-changeroom-containers-container-box-image">
+                                        <span class="main-section-changeroom-containers-container-box-image-rating"><img class="main-section-specialoffer-ul-li-image-rating__star" src="/image/Star 1.svg" alt="">4.8</span>
+                                        <img class="main-section-changeroom-containers-container-box-image__img" src="/image/bed1.png" alt="">
+                                    </div>
+    
+                                    <h3 class="main-section-changeroom-containers-container-box__title">Wilderness Club at Big Ceddar</h3>
+    
+                                    <p class="main-section-changeroom-containers-container-box__bedroom">2 Bedroom Combined Lodge</p>
+    
+                                    <p class="main-section-changeroom-containers-container-box__data">28 October — 1 November</p>
+    
+                                    <span class="main-section-changeroom-containers-container-box-price">$2016<span class="main-section-changeroom-containers-container-box-price__night">/6 night</span></span>
+    
+                                    <ul class="main-section-changeroom-containers-container-box-info flex">
+                                        <li class="main-section-changeroom-containers-container-box-info__beds">4 Beds</li>
+                                        <li class="main-section-changeroom-containers-container-box-info__people">8 Sleeps</li>
+                                        <li class="main-section-changeroom-containers-container-box-info__area">1,350 Sq Ft</li>
+                                    </ul>
+                                </div>
+    
+                                <div class="main-section-changeroom-containers-container-box">
+                                    <div class="main-section-changeroom-containers-container-box-image">
+                                        <span class="main-section-changeroom-containers-container-box-image-rating"><img class="main-section-specialoffer-ul-li-image-rating__star" src="/image/Star 1.svg" alt="">4.8</span>
+                                        <img class="main-section-changeroom-containers-container-box-image__img" src="/image/bed2.png" alt="">
+                                    </div>
+    
+                                    <h3 class="main-section-changeroom-containers-container-box__title">Wilderness Club at Big Ceddar</h3>
+    
+                                    <p class="main-section-changeroom-containers-container-box__bedroom">2 Bedroom Combined Lodge</p>
+    
+                                    <p class="main-section-changeroom-containers-container-box__data">28 October — 1 November</p>
+    
+                                    <span class="main-section-changeroom-containers-container-box-price">$2016<span class="main-section-changeroom-containers-container-box-price__night">/6 night</span></span>
+    
+                                    <ul class="main-section-changeroom-containers-container-box-info flex">
+                                        <li class="main-section-changeroom-containers-container-box-info__beds">4 Beds</li>
+                                        <li class="main-section-changeroom-containers-container-box-info__people">8 Sleeps</li>
+                                        <li class="main-section-changeroom-containers-container-box-info__area">1,350 Sq Ft</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="main-section-changeroom-containers-container"><div class="main-section-changeroom-containers-container">
+
+                                <div class="main-section-changeroom-containers-container-box">
+                                    <div class="main-section-changeroom-containers-container-box-image">
+                                        <span class="main-section-changeroom-containers-container-box-image-rating"><img class="main-section-specialoffer-ul-li-image-rating__star" src="/image/Star 1.svg" alt="">4.8</span>
+                                        <img class="main-section-changeroom-containers-container-box-image__img" src="/image/bed3.png" alt="">
+                                    </div>
+    
+                                    <h3 class="main-section-changeroom-containers-container-box__title">Wilderness Club at Big Ceddar</h3>
+    
+                                    <p class="main-section-changeroom-containers-container-box__bedroom">2 Bedroom Combined Lodge</p>
+    
+                                    <p class="main-section-changeroom-containers-container-box__data">28 October — 1 November</p>
+    
+                                    <span class="main-section-changeroom-containers-container-box-price">$2016<span class="main-section-changeroom-containers-container-box-price__night">/6 night</span></span>
+    
+                                    <ul class="main-section-changeroom-containers-container-box-info flex">
+                                        <li class="main-section-changeroom-containers-container-box-info__beds">4 Beds</li>
+                                        <li class="main-section-changeroom-containers-container-box-info__people">8 Sleeps</li>
+                                        <li class="main-section-changeroom-containers-container-box-info__area">1,350 Sq Ft</li>
+                                    </ul>
+                                </div>
+    
+                                <div class="main-section-changeroom-containers-container-box">
+                                    <div class="main-section-changeroom-containers-container-box-image">
+                                        <span class="main-section-changeroom-containers-container-box-image-rating"><img class="main-section-specialoffer-ul-li-image-rating__star" src="/image/Star 1.svg" alt="">4.8</span>
+                                        <img class="main-section-changeroom-containers-container-box-image__img" src="/image/bed1.png" alt="">
+                                    </div>
+    
+                                    <h3 class="main-section-changeroom-containers-container-box__title">Wilderness Club at Big Ceddar</h3>
+    
+                                    <p class="main-section-changeroom-containers-container-box__bedroom">2 Bedroom Combined Lodge</p>
+    
+                                    <p class="main-section-changeroom-containers-container-box__data">28 October — 1 November</p>
+    
+                                    <span class="main-section-changeroom-containers-container-box-price">$2016<span class="main-section-changeroom-containers-container-box-price__night">/6 night</span></span>
+    
+                                    <ul class="main-section-changeroom-containers-container-box-info flex">
+                                        <li class="main-section-changeroom-containers-container-box-info__beds">4 Beds</li>
+                                        <li class="main-section-changeroom-containers-container-box-info__people">8 Sleeps</li>
+                                        <li class="main-section-changeroom-containers-container-box-info__area">1,350 Sq Ft</li>
+                                    </ul>
+                                </div>
+    
+                                <div class="main-section-changeroom-containers-container-box">
+                                    <div class="main-section-changeroom-containers-container-box-image">
+                                        <span class="main-section-changeroom-containers-container-box-image-rating"><img class="main-section-specialoffer-ul-li-image-rating__star" src="/image/Star 1.svg" alt="">4.8</span>
+                                        <img class="main-section-changeroom-containers-container-box-image__img" src="/image/bed2.png" alt="">
+                                    </div>
+    
+                                    <h3 class="main-section-changeroom-containers-container-box__title">Wilderness Club at Big Ceddar</h3>
+    
+                                    <p class="main-section-changeroom-containers-container-box__bedroom">2 Bedroom Combined Lodge</p>
+    
+                                    <p class="main-section-changeroom-containers-container-box__data">28 October — 1 November</p>
+    
+                                    <span class="main-section-changeroom-containers-container-box-price">$2016<span class="main-section-changeroom-containers-container-box-price__night">/6 night</span></span>
+    
+                                    <ul class="main-section-changeroom-containers-container-box-info flex">
+                                        <li class="main-section-changeroom-containers-container-box-info__beds">4 Beds</li>
+                                        <li class="main-section-changeroom-containers-container-box-info__people">8 Sleeps</li>
+                                        <li class="main-section-changeroom-containers-container-box-info__area">1,350 Sq Ft</li>
+                                    </ul>
+                                </div>
+                            </div></div>
+                            <div class="main-section-changeroom-containers-container"></div>
+                            <div class="main-section-changeroom-containers-container"></div>
+                    </div>
+                    </section>
+                </main>
+            </div>
+        </div>
+
+
+        <ul class="header-nav-ul ul-hidden" id="nav-ul">
+            <li class="header-nav-ul-li"><a class="header-nav-li__a" href="/LastMinuteDeals.html">Last Minute Deals</a></li>
+            <li class="header-nav-ul-li"><a class="header-nav-li__a" href="#">Blog</a></li>
+            <li class="header-nav-ul-li"><a class="header-nav-li__a" href="#">About us</a></li>
+            <li class="header-nav-ul-li"><a class="header-nav-li__a" href="#">Contacts</a></li>
+        </ul>
+
+        <ul class="social">
+            <li class="social-li">
+                <img src="/image/Phone_black.svg" alt="" class="social-li__img">
+            </li>
+            <li class="social-li">
+
+                <img src="/image/Facebook_black.svg" alt="" class="social-li__img">
+            </li>
+            <li class="social-li">
+
+                <img src="/image/Youtube_black.svg" alt="" class="social-li__img">
+            </li>
+            <li class="social-li">
+
+                <img src="/image/Instagram_black.svg" alt="" class="social-li__img">
+            </li>
+            <li class="social-li">
+
+                <img src="/image/Telegram_black.svg" alt="" class="social-li__img">
+            </li>
+        </ul>
+    </div>
 </body>
 </html>

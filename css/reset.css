@@ -59,6 +59,8 @@ li {
 }
 
 .container {
-  width: 1496px;
+  width: 100%;
+  padding-left: 45px;
+  padding-right: 45px;
   margin: 0 auto;
 }
