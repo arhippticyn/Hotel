@@ -544,3 +544,200 @@ li {
   height: 24px;
   left: -36%;
 }
+
+@media (max-width: 360px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .header-wrapper {
+    padding-left: 10px;
+    padding-top: 16px;
+  }
+  .header-nav-burger {
+    display: flex;
+    margin-top: 12px;
+    margin-left: 5px;
+  }
+  .header-nav-blue {
+    margin-left: 20px;
+    align-self: center;
+  }
+  .header-nav-ul {
+    display: none;
+  }
+  .header-nav-info__currency, .header-nav-info__lang {
+    display: none;
+  }
+  .header-nav-info__icon {
+    margin-left: -548px;
+  }
+  .header .ul-hidden {
+    display: block;
+  }
+  .header .show {
+    display: block;
+    padding-left: unset;
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+  }
+  .header .show.header-nav-burger__line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .header .show.header-nav-burger__line:nth-child(2) {
+    opacity: 0;
+  }
+  .header .show.header-nav-burger__line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .ul-hidden {
+    display: block;
+  }
+  .show {
+    display: block;
+    padding-left: unset;
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+  }
+  .show.header-nav-burger__line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .show.header-nav-burger__line:nth-child(2) {
+    opacity: 0;
+  }
+  .show.header-nav-burger__line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .show.header-nav-info__currency, .show.header-nav-info__lang {
+    display: block;
+  }
+  .show.social {
+    opacity: 1;
+    margin-top: 260px;
+  }
+  .main-wrapper {
+    padding-left: 16px;
+  }
+  .main__title {
+    color: #262729;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .main-section-cordinat {
+    width: 318px;
+    height: 70px;
+    margin-top: 48px;
+    margin-left: -10px;
+  }
+  .main-section-cordinat-line {
+    display: none;
+  }
+  .main-section-cordinat-when {
+    display: none;
+  }
+  .main-section-cordinat-search {
+    width: 40px;
+    height: 40px;
+    margin-left: 46px;
+  }
+  .main-section-changeroom-wishes {
+    margin-top: 24px;
+    display: flex;
+  }
+  .main-section-changeroom-wishes__btn {
+    display: flex;
+    width: 160px;
+    height: 50px;
+    padding: 15px 23px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #EE685F;
+    color: #FFF;
+    padding: 15px;
+  }
+  .main-section-changeroom-wishes-fas {
+    margin-left: 4px;
+  }
+  .main-section-changeroom-wishes-fas__filter {
+    display: flex;
+    width: 142px;
+    height: 50px;
+    align-items: center;
+    padding-left: 69px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 2px solid #EE685F;
+    position: relative;
+  }
+  .main-section-changeroom-wishes-fas__filter::before {
+    left: 23%;
+    top: 23%;
+  }
+  .main-section-changeroom-wishes-fas-sort {
+    display: none;
+  }
+  .main-section-changeroom-containers {
+    padding-left: 0px;
+    margin-top: 6px;
+    margin-left: -29px;
+  }
+  .main-section-changeroom-containers-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 16px;
+    row-gap: 16px;
+  }
+  .main-section-changeroom-containers-container-box {
+    width: 328px;
+    height: 388px;
+  }
+  .main-section-changeroom-containers-container-box-image {
+    width: 304px;
+    height: 192px;
+  }
+  .main-section-changeroom-containers-container-box-image__img {
+    width: 304px;
+    height: 192px;
+  }
+  .main-section-changeroom-containers-container-box__title {
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 24px;
+  }
+  .main-section-changeroom-containers-container-box__bedroom {
+    display: none;
+  }
+  .main-section-changeroom-containers-container-box__data {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .main-section-changeroom-containers-container-box-price {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 16px;
+  }
+  .main-section-changeroom-containers-container-box-price__night {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+  }
+  .main-section-changeroom-containers-container-box-info {
+    display: none;
+    width: 0px;
+    height: 0px;
+  }
+}
