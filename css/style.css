@@ -69,6 +69,13 @@ li {
   overflow-x: hidden;
 }
 
+.mobile-burger-menu.ul-hidden {
+  display: none;
+}
+.mobile-burger-menu.show {
+  display: block;
+}
+
 .header-wrapper {
   padding-top: 17px;
   padding-left: 45px;
@@ -121,12 +128,6 @@ li {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-}
-.header-nav-ul.ul-hidden {
-  display: none;
-}
-.header-nav-ul.show {
-  display: none;
 }
 .header-nav-info {
   margin-left: 607px;
@@ -800,6 +801,67 @@ li {
 }
 
 @media (max-width: 360px) {
+  .mobile-burger-menu {
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+    transition-delay: 0.3s;
+    width: 360px;
+    background: #FFF;
+  }
+  .mobile-burger-menu.ul-hidden {
+    transform: translateX(-500px);
+  }
+  .mobile-burger-menu.show {
+    transform: translateX(0px);
+  }
+  .mobile-burger-menu-ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+  }
+  .mobile-burger-menu-ul-li {
+    color: #1A1A1A;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .mobile-burger-menu-info {
+    margin-top: 40px;
+  }
+  .mobile-burger-menu-info__currency {
+    color: #EE685F;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border-bottom: 3px dotted #EE685F;
+  }
+  .mobile-burger-menu-info__lang {
+    color: #EE685F;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border-bottom: 3px dotted #EE685F;
+  }
+  .mobile-burger-menu-social {
+    margin-top: 160px;
+    display: flex;
+    -moz-column-gap: 16px;
+         column-gap: 16px;
+  }
+  .mobile-burger-menu-social-li img {
+    width: 32px;
+    height: 32px;
+  }
+  .hidden-second {
+    display: none;
+  }
   .header-wrapper {
     padding-left: 10px;
     padding-top: 16px;
@@ -823,7 +885,7 @@ li {
     margin-left: -589px;
   }
   .header .ul-hidden {
-    display: block;
+    display: none;
   }
   .header .show {
     display: block;
@@ -842,7 +904,7 @@ li {
     transform: translateY(-8px) rotate(-45deg);
   }
   .ul-hidden {
-    display: block;
+    display: none;
   }
   .show {
     display: block;
