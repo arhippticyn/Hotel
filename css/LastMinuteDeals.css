@@ -547,8 +547,7 @@ li {
 
 @media (max-width: 360px) {
   .container {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 0;
   }
   .header-wrapper {
     padding-left: 10px;
