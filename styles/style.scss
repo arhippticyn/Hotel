@@ -112,6 +112,10 @@
             font-weight: 700;
             line-height: normal;
 
+            &.ml{
+                margin-left: 0;
+            }
+
             &__red{
                 color: $red;
                 font-family: Montserrat;
@@ -915,6 +919,10 @@
 @media (max-width:360px) {
     .container{
         padding-left: 0;
+
+        &.foot{
+            padding-left: 9px;
+        }
     }
     .mobile-burger-menu{
         // transition-property: transform;
@@ -1410,20 +1418,24 @@
         width: 360px;
         height: 1107px;
 
-        &-wrapper{
-            padding-left: 10px;
-        }
+
+
+        // &-wrapper{
+        //     padding-left: 10px;
+        // }
 
         &-flex{
             display: flex;
             flex-direction: column;
             row-gap: 20px;
-            margin-left: 40px;
+            // margin-left: 40px;
 
             &__box__input{
                 width: 308px;
                 height: 40px;
             }
+
+            
 
             &__div{
                 display: flex;
@@ -1431,16 +1443,16 @@
                 row-gap: 20px;
 
                 &__logo{
-                    margin: 10px;
+                    margin-top: 10px;
                 }
 
                 &__icon{
-                    margin-left: 30px;
+                    margin-left: 0px;
                 }
             }
 
             &__conteiner{
-                margin-left: 30px;
+                margin-left: 0px;
             }
         }
 
