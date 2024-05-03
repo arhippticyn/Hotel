@@ -709,6 +709,9 @@ li {
 }
 
 @media (max-width: 360px) {
+  .body {
+    overflow-x: hidden;
+  }
   .container {
     padding-left: 0;
   }
